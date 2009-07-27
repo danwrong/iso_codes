@@ -7,6 +7,8 @@ Echoe.new("iso_codes") do |p|
   p.summary = "Gem for finding and listing ISO codes for countries, currencies and languages"
   p.url = "http://github.com/danwrong/iso_codes/"
   p.retain_gemspec = true
+  p.development_dependencies = ['shoulda', 'fastercsv']
+  p.ignore_pattern = 'csv/*'
 end
 
 namespace :import do
