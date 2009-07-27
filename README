@@ -18,11 +18,11 @@ Usage
 require 'rubygems'
 require 'iso_codes'
 
-Language.all #=> An array of all language objects (for filling form selects etc)
-Language.find_by_a2('en') #=> find the language with the 2 character code 'en'
+ISOCodes::Language.all #=> An array of all language objects (for filling form selects etc)
+ISOCodes::Language.find_by_a2('en') #=> find the language with the 2 character code 'en'
 
-Country.find_all_by_region('Europe') #=> returns all countries in Europe
+ISOCodes::Country.find_all_by_region('Europe') #=> returns all countries in Europe
 
-Currency.find_by_country('GB') #=> returns Currency representing GBP
+ISOCodes::Currency.find_by_country('GB') #=> returns Currency representing GBP
 
 For more info check the tests.
