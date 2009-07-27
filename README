@@ -1,0 +1,28 @@
+ISO Codes
+---------
+
+Dan Webb (dan@massiverobot.co.uk)
+
+Small and simple Ruby gem that allows you to look up and list ISO codes for
+countries, languages and currencies.
+
+Each part of the library is lazily loaded so you only load the data you use.
+If you'd like to add any other useful ISO code lookups then feel free to fork.
+
+Source data from: http://www.commondatahub.com/ and will be kept up to date 
+periodically.
+
+Usage
+-----
+
+require 'rubygems'
+require 'iso_codes'
+
+Language.all #=> An array of all language objects (for filling form selects etc)
+Language.find_by_a2('en') #=> find the language with the 2 character code 'en'
+
+Country.find_all_by_region('Europe') #=> returns all countries in Europe
+
+Currency.find_by_country('GB') #=> returns Currency representing GBP
+
+For more info check the tests.

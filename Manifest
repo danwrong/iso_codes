@@ -1,0 +1,13 @@
+CHANGELOG
+csv/countries.csv
+csv/currency.csv
+csv/languages.csv
+lib/iso_codes/country.rb
+lib/iso_codes/currency.rb
+lib/iso_codes/data/countries.rb
+lib/iso_codes/language.rb
+lib/iso_codes.rb
+LICENSE
+Rakefile
+README
+Manifest
